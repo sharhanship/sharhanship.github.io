@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Ali Sharhan</title>
+    <meta name="description" content="طراح و توسعه‌دهنده وب" />
+    <meta name="keywords" content="طراحی وب, توسعه وب, UI/UX" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="/css/index.css" rel="stylesheet" />
+
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      a,
+      span,
+      li,
+      .hero-text h1,
+      .hero-text h2,
+      .section-title h2 {
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <script>
+              document.addEventListener('contextmenu', function(e) {
+            if (e.target.nodeName === 'IMG') {
+                e.preventDefault();
+                alert('راست کلیک روی تصاویر مجاز نیست.');
+            }
+        });
+        
+        // جلوگیری از درگ و دراپ تصاویر
+        document.addEventListener('dragstart', function(e) {
+            if (e.target.nodeName === 'IMG') {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <!-- هدر سایت -->
+    <header
+      id="header"
+      class="header dark-background d-flex flex-column justify-content-center"
+    >
+      <!-- دکمه منو برای نمایش در دستگاه‌های کوچک -->
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+
+      <div class="header-container d-flex flex-column align-items-start">
+        <!-- منوی ناوبری اصلی -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="#hero" class="active">
+                <!-- آیکون خانه با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                </svg>
+                خانه
+              </a>
+            </li>
+            <li>
+              <a href="#about">
+                <!-- آیکون کاربر با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg>
+                درباره من
+              </a>
+            </li>
+            <li>
+              <a href="#resume">
+                <!-- آیکون رزومه با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                </svg>
+                رزومه
+              </a>
+            </li>
+            <li>
+              <a href="#portfolio">
+                <!-- آیکون نمونه کارها با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                </svg>
+                نمونه کارها
+              </a>
+            </li>
+            <li>
+              <a href="#services">
+                <!-- آیکون خدمات با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                </svg>
+                خدمات
+              </a>
+            </li>
+            <li>
+              <a href="tel:+9920352936">
+                <!-- آیکون تماس با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                تماس با من
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- لینک‌های شبکه‌های اجتماعی -->
+        <div class="social-links text-center">
+          <a href="https://github.com/sharhanship" class="facebook">
+            <!-- آیکون گیت‌هاب با SVG -->
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/sharhan_ship?igsh=dzBzb2tsNDNyMnU1"
+            class="instagram"
+          >
+            <!-- آیکون اینستاگرام با SVG -->
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- بخش هیرو (معرفی اولیه) -->
+      <section id="hero" class="hero section">
+        <div class="background-elements">
+          <div class="bg-circle circle-1"></div>
+          <div class="bg-circle circle-2"></div>
+        </div>
+
+        <div class="hero-content">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+                <div class="hero-text">
+                  <h1>علی <span class="accent-text">شرحان</span></h1>
+                  <h2>sharhan-ship</h2>
+                  <p class="lead">
+                    من یک
+                    <span
+                      class="typed"
+                      data-typed-items="توسعه دهنده وب, توسعه دهنده نرم افزار"
+                    ></span>
+                    هستم
+                  </p>
+                  <p class="description">
+                    علاقه‌مند به خلق تجربیات دیجیتال استثنایی که طراحی نوآورانه
+                    را با توسعه کاربردی ترکیب می‌کنند. بیایید دیدگاه شما را به
+                    واقعیت تبدیل کنیم.
+                  </p>
+
+                  <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary"
+                      >مشاهده کارهای من</a
+                    >
+                    <a href="/assets/pdf/sharhan_resume.pdf" class="btn btn-outline" download="رزومه-علی-شرحان">دانلود رزومه</a>
+                  </div>
+
+                  <div class="social-links">
+                    <a
+                      href="https://www.instagram.com/sharhan_ship?igsh=dzBzb2tsNDNyMnU1"
+                    >
+                      <!-- آیکون اینستاگرام با SVG -->
+                      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg>
+                    </a>
+                    <a href="https://github.com/sharhanship">
+                      <!-- آیکون گیت‌هاب با SVG -->
+                      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-visual">
+                  <div class="profile-container">
+                    <div class="profile-background"></div>
+                    <img
+                      src="assets/img/profile/profile-2.jpg"
+                      alt="علی شرحان"
+                      class="profile-image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش هیرو -->
+
+      <!-- بخش درباره من -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200">
+              <div class="profile-card">
+                <div class="profile-header">
+                  <div class="profile-image">
+                    <img
+                      src="/assets/img/profile/profile-3.jpg"
+                      alt="علی شرحان"
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="profile-badge">
+                    <!-- آیکون تأیید با SVG -->
+                    <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="profile-content">
+                  <h3>علی شرحان</h3>
+                  <p class="profession">Just a Developer</p>
+
+                  <div class="contact-links">
+                    <a href="mailto:abmtime1@gmail.com" class="contact-item">
+                      <!-- آیکون ایمیل با SVG -->
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                      </svg>
+                      abmtime1@gmail.com
+                    </a>
+                    <a href="tel:+9920352936" class="contact-item">
+                      <!-- آیکون تلفن با SVG -->
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                      </svg>
+                      09920352936
+                    </a>
+                    <a href="#" class="contact-item">
+                      <!-- آیکون موقعیت مکانی با SVG -->
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                      </svg>
+                      ایران.خوزستان.شهرستان-دزفول
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-content">
+                <div class="section-header">
+                  <span class="badge-text">با من آشنا شوید</span>
+                  <h2>علاقه‌مند به خلق تجربیات دیجیتال</h2>
+                </div>
+
+                <div class="description">
+                  <p>
+                    طراح و توسعه‌دهنده خلاق با بیش از ۵ سال تجربه در زمینه طراحی
+                    و توسعه وب. متخصص در ایجاد راه‌حل‌های دیجیتال نوآورانه و
+                    کاربرپسند.
+                  </p>
+
+                  <p>
+                    تسلط بر آخرین تکنولوژی‌های روز و توانایی اجرای پروژه‌های
+                    پیچیده با کیفیت بالا و در زمان مقرر.
+                  </p>
+                </div>
+
+                <div class="stats-grid">
+                  <div class="stat-item">
+                    <div class="stat-number">30</div>
+                    <div class="stat-label">پروژه تکمیل شده</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">۵</div>
+                    <div class="stat-label">سال تجربه</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">۹۸%</div>
+                    <div class="stat-label">رضایت مشتریان</div>
+                  </div>
+                </div>
+
+                <div class="details-grid">
+                  <div class="detail-row">
+                    <div class="detail-item">
+                      <span class="detail-label">تخصص</span>
+                      <span class="detail-value">توسعه وبسایت و نرم افزار</span>
+                    </div>
+                    <div class="detail-item">
+                      <span class="detail-label">سطح تجربه</span>
+                      <span class="detail-value">همیشه روبه رشد</span>
+                    </div>
+                  </div>
+                  <div class="detail-row">
+                    <div class="detail-item">
+                      <span class="detail-label">زبان‌ها</span>
+                      <span class="detail-value">فارسی، انگلیسی</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cta-section">
+                  <a
+                    href="/assets/pdf/sharhan_resume.pdf"
+                    class="btn btn-primary"
+                    download="رزومه-علی-شرحان"
+                  >
+                    <!-- آیکون دانلود با SVG -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+                      <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                    </svg>
+                    دریافت رزومه
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش درباره من -->
+
+      <!-- بخش آمار و ارقام -->
+      <section id="stats" class="stats section light-background">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="stats-wrapper">
+                <div class="stats-item" data-aos="zoom-in" data-aos-delay="150">
+                  <div class="icon-wrapper">
+                    <!-- آیکون لبخند با SVG -->
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+                    </svg>
+                  </div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="60"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>مشتریان راضی</p>
+                </div>
+                <!-- پایان آیتم آمار -->
+
+                <div class="stats-item" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="icon-wrapper">
+                    <!-- آیکون پروژه با SVG -->
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M5 4a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm-.5 2.5A.5.5 0 0 1 5 6h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zM5 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1H5zm0 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1H5z"/>
+                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z"/>
+                    </svg>
+                  </div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="30"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>پروژه‌ها</p>
+                </div>
+                <!-- پایان آیتم آمار -->
+
+                <div class="stats-item" data-aos="zoom-in" data-aos-delay="250">
+                  <div class="icon-wrapper">
+                    <!-- آیکون پشتیبانی با SVG -->
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+                    </svg>
+                  </div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="24"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>ساعت پشتیبانی</p>
+                </div>
+                <!-- پایان آیتم آمار -->
+
+                <div class="stats-item" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="icon-wrapper">
+                    <!-- آیکون همکاران با SVG -->
+                    <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                      <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                    </svg>
+                  </div>
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="5"
+                    data-purecounter-duration="1"
+                    class="purecounter"
+                  ></span>
+                  <p>همکاران</p>
+                </div>
+                <!-- پایان آیتم آمار -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش آمار و ارقام -->
+
+      <!-- بخش مهارت‌ها -->
+      <section id="skills" class="skills section">
+        <!-- عنوان بخش -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>مهارت‌ها</h2>
+          <p>مجموعه‌ای از مهارت‌های تخصصی در زمینه طراحی و توسعه وب</p>
+        </div>
+        <!-- پایان عنوان بخش -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="skills-category"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <h3>مهارت های اصلی</h3>
+                <div class="skills-animation">
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>php</h4>
+                      <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      توانایی پیاده سازی بک اند با امنیت بالا با php
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>C#</h4>
+                      <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      توانایی پیاده سازی بک اند با امنیت بالا با php
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>NET.</h4>
+                      <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      توانایی پیاده سازی نرم افزار های ویندوزی و وب اپلیکیشن
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>Xamarin</h4>
+                      <span class="skill-percentage">70%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="70"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      توانایی پیاده سازی بک اند نرم افزار های اندروید
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>JavaScript</h4>
+                      <span class="skill-percentage">60%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="60"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      تسلط بر ES6+، دستکاری DOM و فریم‌ورک‌های مدرن
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div
+                class="skills-category"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <h3>مهارت های فرعی</h3>
+                <div class="skills-animation">
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>HTML/CSS</h4>
+                      <span class="skill-percentage">۹۵%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      تسلط بر HTML5 معنایی و تکنیک‌های مدرن CSS3
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>git</h4>
+                      <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      توانایی بهبود سرعت روند ساخت پروژه
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>git hub</h4>
+                      <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      توانایی ساخت پروژه به صورت تیمی در بستر انلاین
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>xaml</h4>
+                      <span class="skill-percentage">۸۰%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="80"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      استفاده برای دیزاین اپلیکیشن ها
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h4>SQL</h4>
+                      <span class="skill-percentage">۶۵%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="65"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                    <div class="skill-tooltip">
+                      طراحی پایگاه داده، بهینه‌سازی و کوئری‌های پیچیده
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش مهارت‌ها -->
+
+      <!-- بخش رزومه -->
+      <section id="resume" class="resume section">
+        <!-- عنوان بخش -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>رزومه</h2>
+          <p>تجربیات حرفه‌ای و کاربردی من در زمینه طراحی و توسعه وب</p>
+        </div>
+        <!-- پایان عنوان بخش -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <!-- ستون سمت چپ با خلاصه و اطلاعات تماس -->
+            <div class="col-lg-4">
+              <div
+                class="resume-side"
+                data-aos="fade-right"
+                data-aos-delay="100"
+              >
+                <div class="profile-img mb-4">
+                  <img
+                    src="/assets/img/profile/profile-4.jpg"
+                    alt="علی شرحان"
+                    class="img-fluid rounded"
+                  />
+                </div>
+
+                <h3 class="mt-4">اطلاعات تماس</h3>
+                <ul class="contact-info list-unstyled">
+                  <li>
+                    <!-- آیکون موقعیت مکانی با SVG -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                    </svg>
+                    ایران.خوزستان.شهرستان-دزفول
+                  </li>
+                  <li>
+                    <!-- آیکون ایمیل با SVG -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                    abmtime1@gmail.com
+                  </li>
+                  <li>
+                    <!-- آیکون تلفن با SVG -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    09920352936
+                  </li>
+                </ul>
+
+                <div class="skills-animation mt-4">
+                  <h3>مهارت‌های فنی</h3>
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>توسعه وب</span>
+                      <span>۹۵%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>طراحی UI/UX</span>
+                      <span>30%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="30"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>معماری ابری</span>
+                      <span>20%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="20"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                      <span>مدیریت پروژه</span>
+                      <span>95%</span>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ستون سمت راست با تجربیات و تحصیلات -->
+            <div class="col-lg-8 ps-4 ps-lg-5">
+              <!-- بخش تجربیات -->
+              <div class="resume-section" data-aos="fade-up">
+                <h3>
+                  <!-- آیکون تجربه کاری با SVG -->
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                  </svg>
+                  تجربیات حرفه‌ای
+                </h3>
+
+                <div class="resume-item">
+                  <h4>برنماه نویس ارشد شرکت شاپ دیجی دو</h4>
+                  <h5>۱۴۰۱ - اکنون</h5>
+                  <p class="company">
+                    <!-- آیکون شرکت با SVG -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M4.5 2A2.5 2.5 0 0 0 2 4.5v9A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 11.5 2h-7ZM3 4.5A1.5 1.5 0 0 1 4.5 3h7A1.5 1.5 0 0 1 13 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 13.5v-9ZM5.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5ZM5.5 10a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5Z"/>
+                    </svg>
+                    فناوری‌های نوین
+                  </p>
+                  <ul>
+                    <li>
+                      رهبری طراحی و پیاده‌سازی معماری برنامه‌های سازمانی در
+                      مقیاس بزرگ
+                    </li>
+                    <li>
+                      رهنمونی تیم ۱۲ نفره توسعه‌دهندگان و استقرار بهترین روش‌های
+                      فنی
+                    </li>
+                    <li>هدایت پذیرش معماری میکروسرویس و راه‌حل‌های ابری</li>
+                    <li>
+                      کاهش ۷۵٪ زمان توقف سیستم از طریق بهبود معماری و نظارت
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="resume-item">
+                  <h4>توسعه‌دهنده ارشد خانه آژنگ</h4>
+                  <h5>تا کنون - ۱۴۰۱</h5>
+                  <p class="company">
+                    <!-- آیکون شرکت با SVG -->
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M4.5 2A2.5 2.5 0 0 0 2 4.5v9A2.5 2.5 0 0 0 4.5 16h7a2.5 2.5 0 0 0 2.5-2.5v-9A2.5 2.5 0 0 0 11.5 2h-7ZM3 4.5A1.5 1.5 0 0 1 4.5 3h7A1.5 1.5 0 0 1 13 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 13.5v-9ZM5.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5ZM5.5 10a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5Z"/>
+                    </svg>
+                    راه‌حل‌های دیجیتال
+                  </p>
+                  <ul>
+                    <li>
+                      هدایت توسعه محصول اصلی شرکت با دستیابی به بیش از 200 هزار
+                      کاربر
+                    </li>
+                    <li>مدیریت تیم ۸ نفره توسعه‌دهندگان در چندین پروژه</li>
+                    <li>افزایش پوشش تست کد از ۴۵٪ به ۹۰٪</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش رزومه -->
+
+      <!-- بخش نمونه کارها -->
+      <section id="portfolio" class="portfolio section">
+        <!-- عنوان بخش -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>نمونه کارها من</h2>
+          <p>تعدادی من پروژه های در دسترس برای شما</p>
+        </div>
+        <!-- پایان عنوان بخش -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <div class="row">
+              <div class="col-lg-3 filter-sidebar">
+                <div
+                  class="filters-wrapper"
+                  data-aos="fade-right"
+                  data-aos-delay="150"
+                >
+                  <ul class="portfolio-filters isotope-filters">
+                    <li data-filter="*" class="filter-active">همه پروژه ها</li>
+                    <li data-filter=".filter-ongoing-projects">
+                      پروژه های در حال کار
+                    </li>
+                    <li data-filter=".filter-personal-portfolio">
+                      نمونه کار های شخصی
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-9">
+                <div
+                  class="row gy-4 portfolio-container isotope-container"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ongoing-projects"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="/assets/img/portfolio/azhangbaner.gif"
+                        class="img-fluid"
+                        alt="وبسایت خانه آژنگ"
+                        loading="lazy"
+                      />
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">پروژه در حال کار</span>
+                          <h4>وبسایت خانه آژنگ</h4>
+                          <div class="portfolio-links">
+                            <a
+                              href="/assets/img/portfolio/azhangbaner.gif"
+                              class="glightbox"
+                            >
+                              <!-- آیکون بزرگنمایی با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://khaneazhang.ir/"
+                              title="جزئیات بیشتر"
+                            >
+                              <!-- آیکون مشاهده با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- پایان آیتم نمونه کار -->
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-ongoing-projects"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="/assets/img/portfolio/introshopdgdo.gif"
+                        class="img-fluid"
+                        alt="وبسایت شاپ دیجی دو"
+                        loading="lazy"
+                      />
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">پروژه در حال کار</span>
+                          <h4>وبسایت شاپ دیجی دو</h4>
+                          <div class="portfolio-links">
+                            <a
+                              href="/assets/img/portfolio/introshopdgdo.gif"
+                              class="glightbox"
+                            >
+                              <!-- آیکون بزرگنمایی با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://shopdgdo.ir/"
+                              title="جزئیات بیشتر"
+                            >
+                              <!-- آیکون مشاهده با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- پایان آیتم نمونه کار -->
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-personal-portfolio"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="/assets/img/portfolio/introhyperion.gif"
+                        class="img-fluid"
+                        alt="وبسایت هایپریون"
+                        loading="lazy"
+                      />
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">پروژه شخصی</span>
+                          <h4>وبسایت هایپریون</h4>
+                          <div class="portfolio-links">
+                            <a
+                              href="/assets/img/portfolio/introhyperion.gif"
+                              class="glightbox"
+                            >
+                              <!-- آیکون بزرگنمایی با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://github.com/sharhanship/HYPERION"
+                              title="جزئیات بیشتر"
+                            >
+                              <!-- آیکون مشاهده با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- پایان آیتم نمونه کار -->
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-personal-portfolio"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="/assets/img/portfolio/introsharhanresume.gif"
+                        class="img-fluid"
+                        alt="وبسایت رزومه شرحان"
+                        loading="lazy"
+                      />
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">پروژه شخصی</span>
+                          <h4>وبسایت رزومه شرحان</h4>
+                          <div class="portfolio-links">
+                            <a
+                              href="/assets/img/portfolio/introsharhanresume.gif"
+                              class="glightbox"
+                            >
+                              <!-- آیکون بزرگنمایی با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://github.com/sharhanship/sharhanproject"
+                              title="جزئیات بیشتر"
+                            >
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- پایان آیتم نمونه کار -->
+
+                  <div
+                    class="col-lg-6 col-md-6 portfolio-item isotope-item filter-personal-portfolio"
+                  >
+                    <div class="portfolio-wrap">
+                      <img
+                        src="/assets/img/portfolio/introsonika.gif"
+                        class="img-fluid"
+                        alt="وبسایت سونیکا"
+                        loading="lazy"
+                      />
+                      <div class="portfolio-info">
+                        <div class="content">
+                          <span class="category">پروژه شخصی</span>
+                          <h4>وبسایت سونیکا</h4>
+                          <div class="portfolio-links">
+                            <a
+                              href="/assets/img/portfolio/introsonika.gif"
+                              class="glightbox"
+                            >
+                              <!-- آیکون بزرگنمایی با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                              </svg>
+                            </a>
+                            <a
+                              target="_blank"
+                              href="https://github.com/sharhanship/sonika"
+                              title="جزئیات بیشتر"
+                            >
+                              <!-- آیکون مشاهده با SVG -->
+                              <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- پایان آیتم نمونه کار -->
+                </div>
+                <!-- پایان کانتینر نمونه کارها -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش نمونه کارها -->
+
+      <!-- بخش خدمات -->
+      <section id="services" class="services section">
+        <!-- عنوان بخش -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>خدمات من</h2>
+          <p>خدماتی که من برای شما انجام میدهم</p>
+        </div>
+        <!-- پایان عنوان بخش -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-header">
+            <div class="row align-items-center">
+              <div class="col-lg-8 col-md-12">
+                <div class="service-intro">
+                  <h2 class="service-heading">
+                    <div>راه‌حل‌های نوآورانه</div>
+                    <div><span>برای عملکرد کسب‌وکار شما</span></div>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-card position-relative z-1">
+                <div class="service-icon">
+                  <!-- آیکون سئو با SVG -->
+                  <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zM4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+                  </svg>
+                </div>
+                <h3>
+                افزایش <span>سئوی سایت شما</span> 
+                </h3>
+                <p>
+                  برسی نقص ها و مشکلات سایت شما و حل آن ها برای بازدهی بیشتر
+                  سایت شما.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="service-card position-relative z-1">
+                <div class="service-icon">
+                  <!-- آیکون توسعه وب با SVG -->
+                  <svg width="40" height="40" viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                </div>
+                <h3>
+               طراحی و توسعه <span>انواع وبسایت</span> 
+                </h3>
+                <p>
+                  طراحی و توسعه وبسایت شما. در همه زمینه ها. با امنیت و کیفیت
+                  بالا.
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-card position-relative z-1">
+                <div class="service-icon">
+                  <!-- آیکون پشتیبانی با SVG -->
+                <svg class="navicon" width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                  <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                </div>
+                <h3>
+             پشتیبانی <span>رایگان</span> 
+                </h3>
+                <p>
+                  پشتیبانی و مشاوره رایگان در زمینه های مختلف. برای برطرف کردن
+                  مشکلات شما.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- پایان بخش خدمات -->
+    </main>
+
+    <!-- فوتر سایت -->
+    <footer id="footer" class="footer position-relative">
+      <div class="container">
+        <div class="copyright text-center">
+          <p>
+            © <span>کلیه حقوق مادی و معنوی این وبسایت برای</span>
+            <strong class="px-1 sitename">علی شرحان</strong>
+            <span>است.</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- دکمه اسکرول به بالا -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+    >
+      <!-- آیکون فلش بالا با SVG -->
+      <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+        <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+      </svg>
+    </a>
+
+    <!-- فایل‌های جاوااسکریپت Vendor -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- فایل اصلی جاوااسکریپت -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>
